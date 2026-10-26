@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EEF962664347871B83F2FC2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2511A139E0DCD2193D4B307C /* Theme.swift */; };
+		28EE20736E342C1FF3140FE0 /* TerntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727100400D2DF3C2854FA64D /* TerntApp.swift */; };
+		2984C0FB295A6580B45F92D3 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6409849BAFC04FDB77FEF870 /* NukeUI */; };
+		2B1673F221400A8D1A49DD3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B886F9E1F1B80541B71EBB /* Assets.xcassets */; };
+		4C1744C4D86D67671B6FB0A4 /* SetupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EAE4F84DB41245D22FFE74 /* SetupModel.swift */; };
+		60D829A089756F129DFE81D7 /* IdentifiedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 54A5AA5B708BD0F2736DC6A8 /* IdentifiedCollections */; };
+		78D89050044BC15763BF02C4 /* OwnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925BECCAF26349E553CA3A16 /* OwnerView.swift */; };
+		7F6FEF2B00B9E55CA07720AE /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5477800CBC5C7E1413363D /* Collections */; };
+		8148CD6D709E27190F09CB9E /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = BBB244808EA15DAC356EA2D0 /* Tagged */; };
+		82FFDC351ABB428FCFEB5836 /* SetupCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B7A686B76B622CE483AA0F /* SetupCards.swift */; };
+		87D26D208DA9C1C9D466C013 /* GateViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDD6AA1F46D6EA6208CA03F /* GateViews.swift */; };
+		88F3DEAEEB4F3EEC92C2BC30 /* SetupChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510521CE14F994D2667792B8 /* SetupChatController.swift */; };
+		A79FD91A8C3FAE6DF0BB7A9B /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 09B8AA93980778D800FEDB46 /* Dependencies */; };
+		B79A0D4349D078C722D95326 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 5FD9194F2FBB240B0435AFE8 /* Nuke */; };
+		CA72637C745997B3CBD895AE /* HouseholdStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4A31CED5ABBF5EE695E6DF /* HouseholdStore.swift */; };
+		CD9DA9E77E1270F3F77022D5 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDAE35C57479EC15EC7692A /* Place.swift */; };
+		DC1CD4E8A9FB0B0C1F5502E4 /* Clocks in Frameworks */ = {isa = PBXBuildFile; productRef = 11259465985CD21370AD7463 /* Clocks */; };
+		E694C076C2F79D81F9208B1E /* ChatLayout in Frameworks */ = {isa = PBXBuildFile; productRef = B7685F028B8288C56C7BE88B /* ChatLayout */; };
+		EE30747B9E659C853BBA0A6B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250FDB8970182C153708EE0 /* Models.swift */; };
+		EF63F6BDEEB5EEA16957EF57 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = F36A88416710527B51C456F5 /* GRDB */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2511A139E0DCD2193D4B307C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		510521CE14F994D2667792B8 /* SetupChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupChatController.swift; sourceTree = "<group>"; };
+		59B7A686B76B622CE483AA0F /* SetupCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupCards.swift; sourceTree = "<group>"; };
+		6DAD9F96F7DDE73DCCECB7A5 /* Ternt.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Ternt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F4A31CED5ABBF5EE695E6DF /* HouseholdStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdStore.swift; sourceTree = "<group>"; };
+		6FDD6AA1F46D6EA6208CA03F /* GateViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateViews.swift; sourceTree = "<group>"; };
+		727100400D2DF3C2854FA64D /* TerntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerntApp.swift; sourceTree = "<group>"; };
+		8BDAE35C57479EC15EC7692A /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		925BECCAF26349E553CA3A16 /* OwnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerView.swift; sourceTree = "<group>"; };
+		C3EAE4F84DB41245D22FFE74 /* SetupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupModel.swift; sourceTree = "<group>"; };
+		C8B886F9E1F1B80541B71EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D250FDB8970182C153708EE0 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1199131F91A6E2594C1BE615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E694C076C2F79D81F9208B1E /* ChatLayout in Frameworks */,
+				EF63F6BDEEB5EEA16957EF57 /* GRDB in Frameworks */,
+				B79A0D4349D078C722D95326 /* Nuke in Frameworks */,
+				2984C0FB295A6580B45F92D3 /* NukeUI in Frameworks */,
+				A79FD91A8C3FAE6DF0BB7A9B /* Dependencies in Frameworks */,
+				60D829A089756F129DFE81D7 /* IdentifiedCollections in Frameworks */,
+				8148CD6D709E27190F09CB9E /* Tagged in Frameworks */,
+				7F6FEF2B00B9E55CA07720AE /* Collections in Frameworks */,
+				DC1CD4E8A9FB0B0C1F5502E4 /* Clocks in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CAE1478BD7C3158BBAFC6AA = {
+			isa = PBXGroup;
+			children = (
+				63AA926E8D325968799C68CF /* Ternt */,
+				52D1FF81577EDB999E1FE6DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		446C189BCCB0273F8ED45D4C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6F4A31CED5ABBF5EE695E6DF /* HouseholdStore.swift */,
+				D250FDB8970182C153708EE0 /* Models.swift */,
+				8BDAE35C57479EC15EC7692A /* Place.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		473410F2294C0B9925FDC7F0 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				2511A139E0DCD2193D4B307C /* Theme.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		52D1FF81577EDB999E1FE6DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DAD9F96F7DDE73DCCECB7A5 /* Ternt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EA7DCD4DA38FAC100660A86 /* Owner */ = {
+			isa = PBXGroup;
+			children = (
+				925BECCAF26349E553CA3A16 /* OwnerView.swift */,
+			);
+			path = Owner;
+			sourceTree = "<group>";
+		};
+		63AA926E8D325968799C68CF /* Ternt */ = {
+			isa = PBXGroup;
+			children = (
+				FF177F320ADA918B73B0AFCD /* App */,
+				473410F2294C0B9925FDC7F0 /* Design */,
+				446C189BCCB0273F8ED45D4C /* Domain */,
+				7976055D6ED3391DD3FC0E15 /* Gate */,
+				5EA7DCD4DA38FAC100660A86 /* Owner */,
+				C8B886F9E1F1B80541B71EBB /* Assets.xcassets */,
+			);
+			path = Ternt;
+			sourceTree = "<group>";
+		};
+		7976055D6ED3391DD3FC0E15 /* Gate */ = {
+			isa = PBXGroup;
+			children = (
+				6FDD6AA1F46D6EA6208CA03F /* GateViews.swift */,
+				59B7A686B76B622CE483AA0F /* SetupCards.swift */,
+				510521CE14F994D2667792B8 /* SetupChatController.swift */,
+				C3EAE4F84DB41245D22FFE74 /* SetupModel.swift */,
+			);
+			path = Gate;
+			sourceTree = "<group>";
+		};
+		FF177F320ADA918B73B0AFCD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				727100400D2DF3C2854FA64D /* TerntApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EB941F780FBD9A1CB196CF8 /* Ternt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C10E29D14FA076382236F6A /* Build configuration list for PBXNativeTarget "Ternt" */;
+			buildPhases = (
+				5BB839E43352095468E057C5 /* Sources */,
+				53C55897412ABC46B1EAF900 /* Resources */,
+				1199131F91A6E2594C1BE615 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ternt;
+			packageProductDependencies = (
+				B7685F028B8288C56C7BE88B /* ChatLayout */,
+				F36A88416710527B51C456F5 /* GRDB */,
+				5FD9194F2FBB240B0435AFE8 /* Nuke */,
+				6409849BAFC04FDB77FEF870 /* NukeUI */,
+				09B8AA93980778D800FEDB46 /* Dependencies */,
+				54A5AA5B708BD0F2736DC6A8 /* IdentifiedCollections */,
+				BBB244808EA15DAC356EA2D0 /* Tagged */,
+				9B5477800CBC5C7E1413363D /* Collections */,
+				11259465985CD21370AD7463 /* Clocks */,
+			);
+			productName = Ternt;
+			productReference = 6DAD9F96F7DDE73DCCECB7A5 /* Ternt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A3F36F0061478C90FA0CEA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9EB941F780FBD9A1CB196CF8 = {
+						DevelopmentTeam = RC39G7HHG3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 45E54442B8970540332E4563 /* Build configuration list for PBXProject "Ternt" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 1CAE1478BD7C3158BBAFC6AA;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8D6F13A2F4641042A6E46EDD /* XCRemoteSwiftPackageReference "ChatLayout" */,
+				F9BEADDB6D4FA772351E3DF0 /* XCRemoteSwiftPackageReference "swift-clocks" */,
+				BFB159EFDC3B02C8944FF47B /* XCRemoteSwiftPackageReference "swift-collections" */,
+				3762CB6B26427E0EC79499A8 /* XCRemoteSwiftPackageReference "swift-dependencies" */,
+				B2858315D69CFBB3EDD5C166 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+				17852C52DECF221D4AA59D76 /* XCRemoteSwiftPackageReference "swift-identified-collections" */,
+				E695C0E3F51680D982583D73 /* XCRemoteSwiftPackageReference "Nuke" */,
+				52804A0676C7F51CBB288E01 /* XCRemoteSwiftPackageReference "swift-tagged" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 52D1FF81577EDB999E1FE6DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EB941F780FBD9A1CB196CF8 /* Ternt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53C55897412ABC46B1EAF900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B1673F221400A8D1A49DD3A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BB839E43352095468E057C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D26D208DA9C1C9D466C013 /* GateViews.swift in Sources */,
+				CA72637C745997B3CBD895AE /* HouseholdStore.swift in Sources */,
+				EE30747B9E659C853BBA0A6B /* Models.swift in Sources */,
+				78D89050044BC15763BF02C4 /* OwnerView.swift in Sources */,
+				CD9DA9E77E1270F3F77022D5 /* Place.swift in Sources */,
+				82FFDC351ABB428FCFEB5836 /* SetupCards.swift in Sources */,
+				88F3DEAEEB4F3EEC92C2BC30 /* SetupChatController.swift in Sources */,
+				4C1744C4D86D67671B6FB0A4 /* SetupModel.swift in Sources */,
+				28EE20736E342C1FF3140FE0 /* TerntApp.swift in Sources */,
+				0EEF962664347871B83F2FC2 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1C231DBE88ED4DC0EEBA3274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RC39G7HHG3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tern.household.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		27A3ED0EF84CA93EF0449419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RC39G7HHG3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tern.household.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F69286862B232E91C6ADC36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TERN;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Add a photo to your profile.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DFAED07CC999912667D28C5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TERN;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Add a photo to your profile.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C10E29D14FA076382236F6A /* Build configuration list for PBXNativeTarget "Ternt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27A3ED0EF84CA93EF0449419 /* Debug */,
+				1C231DBE88ED4DC0EEBA3274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		45E54442B8970540332E4563 /* Build configuration list for PBXProject "Ternt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F69286862B232E91C6ADC36 /* Debug */,
+				DFAED07CC999912667D28C5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		17852C52DECF221D4AA59D76 /* XCRemoteSwiftPackageReference "swift-identified-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-identified-collections";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		3762CB6B26427E0EC79499A8 /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.12.0;
+			};
+		};
+		52804A0676C7F51CBB288E01 /* XCRemoteSwiftPackageReference "swift-tagged" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-tagged";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+		8D6F13A2F4641042A6E46EDD /* XCRemoteSwiftPackageReference "ChatLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ekazaev/ChatLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.2;
+			};
+		};
+		B2858315D69CFBB3EDD5C166 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.0;
+			};
+		};
+		BFB159EFDC3B02C8944FF47B /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.1;
+			};
+		};
+		E695C0E3F51680D982583D73 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
+		F9BEADDB6D4FA772351E3DF0 /* XCRemoteSwiftPackageReference "swift-clocks" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-clocks";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09B8AA93980778D800FEDB46 /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3762CB6B26427E0EC79499A8 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		11259465985CD21370AD7463 /* Clocks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9BEADDB6D4FA772351E3DF0 /* XCRemoteSwiftPackageReference "swift-clocks" */;
+			productName = Clocks;
+		};
+		54A5AA5B708BD0F2736DC6A8 /* IdentifiedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 17852C52DECF221D4AA59D76 /* XCRemoteSwiftPackageReference "swift-identified-collections" */;
+			productName = IdentifiedCollections;
+		};
+		5FD9194F2FBB240B0435AFE8 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E695C0E3F51680D982583D73 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		6409849BAFC04FDB77FEF870 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E695C0E3F51680D982583D73 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		9B5477800CBC5C7E1413363D /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFB159EFDC3B02C8944FF47B /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		B7685F028B8288C56C7BE88B /* ChatLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D6F13A2F4641042A6E46EDD /* XCRemoteSwiftPackageReference "ChatLayout" */;
+			productName = ChatLayout;
+		};
+		BBB244808EA15DAC356EA2D0 /* Tagged */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52804A0676C7F51CBB288E01 /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = Tagged;
+		};
+		F36A88416710527B51C456F5 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2858315D69CFBB3EDD5C166 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8A3F36F0061478C90FA0CEA2 /* Project object */;
+}
