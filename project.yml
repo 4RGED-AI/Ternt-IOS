@@ -1,6 +1,6 @@
 name: Ternt
 options:
-  bundleIdPrefix: com.tern.household
+  bundleIdPrefix: com.terned.household
   deploymentTarget:
     iOS: "26.0"
   createIntermediateGroups: true
@@ -8,13 +8,16 @@ options:
 settings:
   SWIFT_VERSION: "5.0"
   MARKETING_VERSION: "0.1.0"
-  CURRENT_PROJECT_VERSION: "1"
+  CURRENT_PROJECT_VERSION: "19"
   TARGETED_DEVICE_FAMILY: "1"
   GENERATE_INFOPLIST_FILE: YES
-  INFOPLIST_KEY_CFBundleDisplayName: TERN
+  INFOPLIST_KEY_CFBundleDisplayName: Trytern
   INFOPLIST_KEY_UILaunchScreen_Generation: YES
   INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
-  INFOPLIST_KEY_NSPhotoLibraryUsageDescription: Add a photo to your profile.
+  INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+  INFOPLIST_KEY_NSMicrophoneUsageDescription: Talk to Trytern in English, Tamil, or Hindi instead of typing.
+  INFOPLIST_KEY_NSContactsUsageDescription: Add a driver or house help from your contacts.
+  INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: Find the community around you.
   INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
 packages:
   ChatLayout:
@@ -41,6 +44,15 @@ packages:
   Clocks:
     url: https://github.com/pointfreeco/swift-clocks
     from: 1.0.6
+  Supabase:
+    url: https://github.com/supabase/supabase-swift
+    from: 2.55.5
+  GoogleSignIn:
+    url: https://github.com/google/GoogleSignIn-iOS
+    from: 10.1.0
+  GooglePlaces:
+    url: https://github.com/googlemaps/ios-places-sdk
+    from: 10.15.0
 targets:
   Ternt:
     type: application
@@ -66,12 +78,22 @@ targets:
         product: Collections
       - package: Clocks
         product: Clocks
+      - package: Supabase
+        product: Supabase
+      - package: GoogleSignIn
+        product: GoogleSignIn
+      - package: GooglePlaces
+        product: GooglePlacesSwift
     settings:
-      PRODUCT_BUNDLE_IDENTIFIER: com.tern.household.ios
+      PRODUCT_BUNDLE_IDENTIFIER: com.terned.household.ios
+      TARGETED_DEVICE_FAMILY: "1"
+      INFOPLIST_KEY_UIRequiresFullScreen: YES
+      INFOPLIST_FILE: Ternt/Info.plist
       ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
       ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
       CODE_SIGN_STYLE: Automatic
       DEVELOPMENT_TEAM: RC39G7HHG3
+      CODE_SIGN_ENTITLEMENTS: Ternt/Ternt.entitlements
 schemes:
   Ternt:
     build:

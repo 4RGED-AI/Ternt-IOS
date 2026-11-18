@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Take a photo to show a task is done.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Choose a photo when this device has no camera.</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>PlacesAPIKey</key>
+	<string>AIzaSyBBTML3hLUXWLXUYda_s-rxG5C9OOn6UyM</string>
+	<key>GIDClientID</key>
+	<string>950804556584-74ar6tinvg43uja0inrtv8i7cgbj85e2.apps.googleusercontent.com</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.950804556584-74ar6tinvg43uja0inrtv8i7cgbj85e2</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

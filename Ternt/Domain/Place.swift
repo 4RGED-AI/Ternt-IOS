@@ -102,4 +102,29 @@ enum ClockText {
         let hour = hour24 % 12 == 0 ? 12 : hour24 % 12
         return String(format: "%d:%02d %@", hour, minute, hour24 >= 12 ? "PM" : "AM")
     }
+
+    /// Reads a worker's saved span, including the narrow space iOS puts before AM/PM.
+    static func span(_ hours: String) -> (starts: Date, ends: Date) {
+        let parts = hours.components(separatedBy: CharacterSet(charactersIn: "–—-"))
+            .map { $0.trimmingCharacters(in: .whitespaces) }
+            .filter { !$0.isEmpty }
+        return (time(parts.first, hour: 7), time(parts.dropFirst().first, hour: 13))
+    }
+
+    private static func time(_ text: String?, hour fallback: Int) -> Date {
+        let calendar = Calendar.current
+        func at(_ hour: Int, _ minute: Int) -> Date {
+            calendar.date(bySettingHour: hour, minute: minute, second: 0, of: Date()) ?? Date()
+        }
+        guard var raw = text?.trimmingCharacters(in: .whitespaces), !raw.isEmpty else { return at(fallback, 0) }
+        raw = raw.replacingOccurrences(of: "\u{202f}", with: " ").replacingOccurrences(of: "\u{00a0}", with: " ")
+        let pieces = raw.split(separator: " ").map(String.init)
+        let clock = pieces[0].split(separator: ":")
+        guard let hourRaw = Int(clock.first ?? "") else { return at(fallback, 0) }
+        let minute = clock.count > 1 ? Int(clock[1]) ?? 0 : 0
+        let mark = pieces.dropFirst().joined().uppercased()
+        var hour = hourRaw % 12
+        if mark.hasPrefix("P") { hour += 12 }
+        return at(hour, min(max(minute, 0), 59))
+    }
 }

@@ -1,6 +1,35 @@
 import Dependencies
 import Foundation
 import GRDB
+import UIKit
+
+enum ProfileImage {
+    private static var file: URL {
+        let folder = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
+        return folder.appendingPathComponent("profile.jpg")
+    }
+
+    static func load() -> UIImage? {
+        UIImage(contentsOfFile: file.path)
+    }
+
+    static func store(_ image: UIImage?) {
+        if image == nil {
+            try? FileManager.default.removeItem(at: file)
+            return
+        }
+        guard let image else { return }
+        let maxSide: CGFloat = 640
+        let longest = max(image.size.width, image.size.height)
+        let scale = longest > 0 ? min(1, maxSide / longest) : 1
+        let size = CGSize(width: image.size.width * scale, height: image.size.height * scale)
+        let data = UIGraphicsImageRenderer(size: size).jpegData(withCompressionQuality: 0.86) { _ in
+            image.draw(in: CGRect(origin: .zero, size: size))
+        }
+        try? FileManager.default.createDirectory(at: file.deletingLastPathComponent(), withIntermediateDirectories: true)
+        try? data.write(to: file, options: .atomic)
+    }
+}
 
 final class HouseholdStore {
     private let queue: DatabaseQueue
